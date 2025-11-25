@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip> // Для форматування виводу у Завданні 2
+
+using namespace std;
+
+void task1_sum_of_cubes() {
+    cout << "--- Завдання 1: Сума кубів чисел від 5 до 50 ---\n";
+
+    long long sum_of_cubes = 0; // Використовуємо long long для запобігання переповненню
+
+    for (int i = 5; i <= 50; ++i) {
+        // Обчислюємо куб числа i
+        long long cube = (long long)i * i * i;
+        // Додаємо до загальної суми
+        sum_of_cubes += cube;
+    }
+
+    cout << "Діапазон чисел: [5, 50]\n";
+    cout << "Сума кубів всіх натуральних чисел у цьому діапазоні: " << sum_of_cubes << endl;
+    cout << "------------------------------------------\n";
+}
